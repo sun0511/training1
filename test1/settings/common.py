@@ -3,6 +3,7 @@ import json
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
 with open(os.path.join(BASE_DIR, 'secret.json'), 'r') as f:
     secret = json.loads(f.read())
 
